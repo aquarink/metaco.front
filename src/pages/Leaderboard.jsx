@@ -3,7 +3,7 @@ import axios from "axios";
 import { Container, Table } from 'react-bootstrap';
 
 const Leaderboard = () => {
-    const endPoint = "http://localhost:3210/"
+    const endPoint = "https://api-metaco-pebri.herokuapp.com/"
 
     const [lead, setLead] = useState({dataLeaderboard : []});
 

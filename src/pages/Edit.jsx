@@ -4,7 +4,7 @@ import axios from "axios";
 import { Container, Form, Button } from 'react-bootstrap';
 
 const Edit = () => {
-    const endPoint = "http://localhost:3210/"
+    const endPoint = "https://api-metaco-pebri.herokuapp.com/"
     const search = useLocation().search;
     const idnya = new URLSearchParams(search).get('id');
 

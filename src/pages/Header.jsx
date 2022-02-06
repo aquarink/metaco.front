@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 const Header = () => {
     return (
@@ -10,18 +10,15 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/">Leaderboard</Nav.Link>
-                            <Nav.Link href="/list">List</Nav.Link>
-                            <Nav.Link href="/add">Add</Nav.Link>
-                            {/* <NavDropdown title="Manage" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/tournament">Tournament</NavDropdown.Item>
+                            <NavDropdown title="Leaderboard" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="/">Leaderboard</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="/teams">Teams</NavDropdown.Item>
+                                <NavDropdown.Item href="/list">List</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="/teammember">Team Member</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="/user">Users</NavDropdown.Item>
-                            </NavDropdown> */}
+                                <NavDropdown.Item href="/add">Add</NavDropdown.Item>
+                            </NavDropdown>
+                            <Nav.Link href="/teams">Teams</Nav.Link>
+                            <Nav.Link href="/players">Players</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

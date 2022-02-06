@@ -3,7 +3,8 @@ import axios from "axios";
 import { Container, Form, Button } from 'react-bootstrap';
 
 const Add = () => {
-    const endPoint = "http://localhost:3210/"
+    // const endPoint = "http://localhost:3210/"
+    const endPoint = "https://api-metaco-pebri.herokuapp.com/"
 
     const [konten, setKonten] = useState({
         team: [],
